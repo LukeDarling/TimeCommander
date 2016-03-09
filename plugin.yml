@@ -1,6 +1,6 @@
 name: TimeCommander
 main: LDX\TimeCommander\Main
-version: 2.0
+version: 2.1
 api: [1.0.0, 2.0.0]
 author: LDX
 load: POSTWORLD
