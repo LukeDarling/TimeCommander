@@ -1,5 +1,5 @@
 <?php
-namespace LDX\TimeCommander;
+namespace NycuRO\TimeMessage;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecuter;
@@ -11,11 +11,11 @@ class Main extends PluginBase {
   public function onEnable() {
     $this->saveDefaultConfig();
     $c = $this->getConfig()->getAll();
-    foreach ($c["Commands"] as $i) {
-      $this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Command"]),$i["Time"] * 1200);
+    foreach ($c["Messages"] as $i) {
+      $this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Message"]),$i["Time"] * 1200);
     }
   }
-  public function runCommand($msg) {
+  public function sendMessage($msg) {
     $this->getServer()->broadcastMessage($msg, $level->getPlayers());
   }
 }
