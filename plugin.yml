@@ -1,7 +1,6 @@
-name: TimeCommander
-main: LDX\TimeCommander\Main
-version: 2.1
+name: TimeMessage
+main: NycuRO\TimeMessage\Main
+version: 1.0
 api: [1.0.0, 2.0.0]
-author: LDX
+author: NycuRO
 load: POSTWORLD
-website: https://github.com/LDX-MCPE/TimeCommander

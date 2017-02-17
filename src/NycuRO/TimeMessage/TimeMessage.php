@@ -1,17 +1,17 @@
 <?php
-namespace LDX\TimeCommander;
+namespace NycuRO\TimeMessage;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\Server;
-class TimeCommand extends PluginTask {
+class TimeMessage extends PluginTask {
   public function __construct($plugin,$cmd) {
     $this->plugin = $plugin;
-    $this->cmd = $cmd;
+    $this->msg = $msg;
     $this->start = false;
     parent::__construct($plugin);
   }
   public function onRun($ticks) {
     if($this->start) {
-      $this->plugin->runCommand($this->cmd);
+      $this->plugin->sendMessage($this->msg);
     } else {
       $this->start = true;
     }
