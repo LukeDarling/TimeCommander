@@ -5,7 +5,7 @@ use pocketmine\Server;
 class TimeMessage extends PluginTask {
   public function __construct($plugin,$cmd) {
     $this->plugin = $plugin;
-    $this->cmd = $cmd;
+    $this->msg = $msg;
     $this->start = false;
     parent::__construct($plugin);
   }
