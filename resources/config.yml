@@ -3,10 +3,8 @@
 # List of commands for the plugin to execute at the given times;
 # Command: Command to execute;
 # Time: Amount of time in minutes between command executions;
-Commands:
-  - Command: say I made my server awesome with TimeCommander!
+Messages:
+  - Message: Plugin by NycuRO!
     Time: 5
-  - Command: say LDX is awesome!
+  - Message: Test Plugin!
     Time: 10
-  - Command: reload
-    Time: 1440
