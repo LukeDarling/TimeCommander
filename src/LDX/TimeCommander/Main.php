@@ -15,8 +15,8 @@ class Main extends PluginBase {
       $this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Command"]),$i["Time"] * 1200);
     }
   }
-  public function runCommand($cmd) {
-    $this->getServer()->dispatchCommand(new ConsoleCommandSender(),$cmd);
+  public function runCommand($msg) {
+    $this->getServer()->broadcastMessage($msg, $level->getPlayers());
   }
 }
 ?>
