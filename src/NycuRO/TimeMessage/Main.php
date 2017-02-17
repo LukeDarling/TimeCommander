@@ -12,7 +12,7 @@ class Main extends PluginBase {
     $this->saveDefaultConfig();
     $c = $this->getConfig()->getAll();
     foreach ($c["Messages"] as $i) {
-      $this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Message"]),$i["Time"] * 1200);
+      $this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeMessage($this,$i["Message"]),$i["Time"] * 1200);
     }
   }
   public function sendMessage($msg) {
