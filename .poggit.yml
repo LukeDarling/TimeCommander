@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/LDX-MCPE/TimeCommander
+branches:
+- master
+projects:
+  TimeCommander:
+    path: ""
+...
