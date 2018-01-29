@@ -1,7 +1,7 @@
 name: TimeCommander
 main: LDX\TimeCommander\Main
 version: 2.1
-api: [1.0.0, 2.0.0]
+api: [3.0.0, 3.0.0-ALPHA6, 3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
 author: LDX
 load: POSTWORLD
 website: https://github.com/LDX-MCPE/TimeCommander
