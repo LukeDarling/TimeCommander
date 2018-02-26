@@ -8,7 +8,7 @@
 - Simply place this plugin in your PMMP /plugins/ directory
 - Restart your server so the files can generate.
 - Edit config.yml with your commands & time intervals!
-
+- Download the latest .phar here: https://poggit.pmmp.io/ci/LDX-MCPE/TimeCommander
 
 ### Example Config
 ```
