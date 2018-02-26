@@ -19,4 +19,3 @@ class Main extends PluginBase {
     $this->getServer()->dispatchCommand(new ConsoleCommandSender(),$cmd);
   }
 }
-?>
