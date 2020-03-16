@@ -15,7 +15,7 @@ class Main extends PluginBase{
 		$this->saveDefaultConfig();
 		$c = $this->getConfig()->getAll();
 		foreach ($c["Commands"] as $i) {
-			$this->getServer()->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Command"]),$i["Time"] * 1200);
+			$this->getScheduler()->scheduleRepeatingTask(new TimeCommand($this,$i["Command"]),$i["Time"] * 1200);
 		}
 	}
 	
